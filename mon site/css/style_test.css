@@ -1,0 +1,488 @@
+
+a{
+	text-decoration: underline;  
+}
+p{
+	color:black;
+	font-size:20px;
+}
+div h2{
+ 	color:#3192b8;
+
+}
+ 
+footer{
+	text-align: center;
+}
+#page{
+	background-image: linear-gradient(white,#3192b8,white); 
+}
+#titre_page{
+	color:#3192b8;
+}
+
+#introduction{
+	color :black;
+	text-align: center;
+	width:100%;
+}
+body{
+	padding: 0;
+	margin:0;
+}
+
+header{
+	margin-left:15%;
+	heigth:100px;
+
+
+}
+#globale{
+	background-color:white;
+}	
+
+
+
+
+
+/*====================================*/
+/* Page =============================================*/
+#titre{
+	font-size: 50px;
+	font-family: "titre";
+	color:white;
+
+
+}
+
+#page{
+	color:white;
+	width:100%;
+	height: 100%;
+}
+
+.contenu{
+	padding-left: 30%;
+	background-image :none;
+	font-family: "titre";
+	font-size: 30px;
+
+
+	margin: 0;
+	color:white;
+	padding-left: 50px;
+}
+
+#titre_page{
+	text-align: center;
+}
+/* Banniere*/
+#banniere{
+	float:left;
+	width:25%;
+	margin-left: 10%;
+	height: 100%;
+}
+
+#nom{
+	float:left;
+	width:60%;
+	text-align: center;
+	height: 100%;
+}
+
+.row{
+	align-content: center;
+	margin-top:10px;	
+	padding-top:15px;	
+}
+.container{
+	height:986px;
+	width:1919px;
+	clear: both;
+
+}
+.haut_page{
+	position: absolute;
+	left:50%;
+	top:50%;
+	align-content: center;
+
+}
+/*Fin page========================================*/
+
+/* Code pour le menu=================================*/
+.menu {
+	float:left;
+	height: 575px;
+	font-family: "titre";
+	color:white;
+	width:150px;
+	
+
+
+	border:solid black 1px;
+	border-radius: 10px;
+	align-content: center;
+
+	background-color: white;
+}
+/* Code pour le animation menu <*/
+@keyframes menu_anim{
+	from{transform: translateX(0))}
+	to{transform : translateX(5px)}
+}
+
+li{
+
+	list-style-type:none;
+
+}
+
+.menu li:hover{
+
+	font-size: 30px;
+
+	transition-duration: 1.5s;
+
+	font-family: "titre";
+	animation-name: menu_anim;
+	animation-duration: 3s;
+
+	float:left;
+
+}
+.menu ul{
+	padding-left: 0;
+}
+
+#menu{
+	height: 500px;
+	margin-top: 75px;
+}
+.menu li{
+	border-bottom: solid black 1px;
+	font-size: 20px;
+
+	margin: 0;
+	padding: 0;
+}
+
+#snav{
+	display:none;
+	text-align:center;
+	background:inherit;
+}
+#loisir {
+	animation-name :none;
+}
+
+
+#loisir:hover #snav{
+	font-family: "titre";
+	display:block;
+	animation-name: menu_anim;
+	animation-duration: 3s;
+}
+		
+/*fin Code menu===================================================*/
+
+
+
+
+
+
+.annonce_des_pages{
+	float:left;
+	display: inline;
+	min-height: 600px;
+	width:100%;
+	overflow: hidden;
+
+	
+}
+.annonce_des_pages div{
+	float:left;
+	margin-bottom:3%;
+
+}
+
+
+.page_next_img{
+	background-color: white;
+	border-radius: 30px;
+	height: 100%;
+	margin-top:10px;
+}
+#annonce1{
+	transform: scale(0.8,0.8);
+	width:50%;
+	height:30%;
+}
+
+
+
+
+#annonce3{
+	transform: scale(0.8,0.8);
+	height:30%;
+	width:50%;	
+}
+#annonce4{
+	transform: scale(0.8,0.8);
+	height:30%;
+	width:100%;	
+}
+
+
+#annonce1:hover,#annonce2:hover,#annonce3:hover,#annonce4:hover{
+	transform: scale(1,1);
+	cursor: : pointer;
+	transition-duration: 2s;
+}
+
+
+
+
+
+/*article==================*/
+article h1{
+	color:black;
+}
+
+article{
+	border :solid black 1px;
+	border-radius: 10px;
+}
+/*Fin article===============*/
+
+
+
+
+/*Tableau des compétence==============================*/
+	
+table{
+	width:100%;
+	border : grey solid 1px;	
+
+
+}
+table thead{
+
+	background-image: linear-gradient(to right,white,lightblue,#3192b8);
+}
+
+table tr{
+	border-bottom: solid grey 1px;
+
+}
+table tr th{
+	border-right : grey solid 1px;
+}
+ table th{
+	color:black;
+	font-size: 25px;
+	width:18%;
+}
+
+table td{
+	border-radius : 30px;
+	height:100%;
+	padding:0;
+}
+table td div{
+	background-image: linear-gradient(to right,white,lightblue,#3192b8);
+	border-radius : 30px;
+	height:40px;
+}
+
+@keyframes chargement_python{
+
+	from {
+		width: 0%;
+  }
+  to {
+    margin-left: 0%;
+    width: 65%;
+  }
+}
+#niveau_python{
+	animation-duration: 5s;
+  	animation-name: chargement_python;
+  	width: 65%;
+	margin :0;
+}
+
+@keyframes chargement_c{
+
+	from {
+    	width: 0%;
+  }
+  to {
+    margin-left: 0%;
+    width: 60%; 
+  }
+}
+#niveau_c{
+	animation-duration: 5s;
+	width: 60%;
+  	animation-name: chargement_c;
+	margin :0;
+}
+@keyframes chargement_cpp{
+
+	from {
+    	width: 0%;
+  }
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
+}
+#niveau_cpp{
+	animation-duration: 5s;
+	width: 50%;
+  	animation-name: chargement_cpp;
+	margin :0;
+}
+
+@keyframes chargement_java{
+
+	from {
+    	width: 0%;
+  }
+  to {
+    margin-left: 0%;
+    width: 60%;
+  }
+}
+#niveau_java{
+	animation-duration: 5s;
+	 width: 60%;
+  	animation-name: chargement_java;
+	margin :0;
+}
+
+@keyframes chargement_html{
+
+	from {
+    	width: 0%;
+  }
+  to {
+    margin-left: 0%;
+    width: 15%;
+  }
+}
+#niveau_html_css{
+	animation-duration: 5s;
+	width: 15%;
+  	animation-name: chargement_html;
+	margin :0;
+}
+
+/*Fin Tableau des comptétence===========================*/
+
+
+/*profil================================================*/
+
+#photo{
+	transform: scale(0.6,0.6) translateX(-25%);
+	border : solid black 1px;
+	border-radius : 200px;
+}
+
+#case_image{	
+	width:30%;                      /*decalé le texte de profil*/
+	float:left;                     /*mettre le etxte a droite*/ 
+	border-bottom: solid grey 1px;   /*le petit trait rick*/
+}
+
+
+#information{
+	width :70%;
+}
+#infos{
+	text-align: left;
+}
+#gauche{
+	text-align: right;
+	width: 50%;
+}
+.info_detail{
+	border : solid black 1px;
+	border-radius: 10px;
+	padding : 5px;
+	width:100%;
+	text-align: center;
+}
+
+
+/*Fin Profil===============================*/
+
+/*Formulaire================================*/
+
+form{
+	width:45%;
+}
+
+#formulaire{	
+	width:100%;
+	text-align: left;
+}
+#message{
+	margin-right:100%	;
+}
+input{
+	font-size: 10px;
+ 	height: 5%;
+ 	border-radius: 10px;
+}
+input[type=submit]{
+	background-color: white;
+}
+input[type=submit]:hover{
+	background-color: grey;
+	transition-duration: 2s;
+	cursor:pointer;
+}
+
+
+/*Fin formulaire===============================*/
+
+
+
+
+
+
+/*Musique===================================*/
+.boite_image{
+	width: 30%;
+	height: 45%;
+	margin : 5% 0.5%;
+	transform: scale(0.8,0.8);
+}
+
+.boite_image:hover{
+	cursor : pointer;
+	transition-duration: 1.5s;
+	transform : scale(1,1);
+}
+.boite_image:hover audio{
+	display : block;
+}
+
+.boite_image audio{
+	display: none;
+	transform : translateY(-300%)
+}
+
+#mhd img{
+	transform : scale(0.8,0.8) translateX(-15%)  translateY(-15%);	
+}
+/*Fin Musique======================================*/
+
+
+
+
+
+
